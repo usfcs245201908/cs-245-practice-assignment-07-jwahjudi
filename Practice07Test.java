@@ -92,7 +92,6 @@ public class Practice07Test {
 	
 	protected long timingTest(List<Integer> list) {
 		long start = System.currentTimeMillis();
-
 		try {
 			for (int i = 0; i < 5000; i++) {
 				if (i % 10 == 0 && list.size() > 0) {
@@ -102,7 +101,7 @@ public class Practice07Test {
 				}
 			}
 		} catch (Exception e) {
-			// e.printStackTrace();  // Uncomment this line if you see errors in timing test.
+			// e.printStackTrace();
 			return Long.MAX_VALUE;
 		}
 		return System.currentTimeMillis() - start;
